@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1a1a1a; 
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #f0f0f0; 
+}
+
+h1 {
+  text-align: center;
+  color: #f0f0f0;
+  background-color: #333;
+  padding: 20px;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #666; 
+}
+
+.featured-news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 20px;
+}
+
+.news-item {
+  width: 38%;
+  padding: 10px;
+  background-color: #333; 
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.featured {
+  width: 80vw;
+  height: 140vh;
+}
+
+.featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-item h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1em 0;
+  color: #f0f0f0;
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-description {
+  padding: 1em;
+  text-align: justify;
+  color: #ccc; 
+}
+
+.read-more {
+  display: block;
+  padding: 10px 20px;
+  margin: 10px auto;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #666; 
+  color: #fff;
+  border: 2px solid #666;
+}
+
+.read-more:hover {
+  background-color: #333; 
+  color: #fff;
+  border: 2px solid #333;
+  font-weight: bold;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #f0f0f0;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.news-2 {
+  width: 40vw;
+  height: 60vh;
+  background-color: #333; 
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.news-2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+}
+
+.news-2 h3 {
+  font-size: 1em;
+  color: #f0f0f0;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 5px;
+}
+
+.news-2 a {
+  margin-left: 430px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.news-2 a:hover {
+  color: whitesmoke;
+  font-weight: bold;
+
+}
+
+footer {
+  text-align: center;
+  color: #333; 
+  background-color: #f0f0f0;
+  padding: 28px;
+  font-weight: bold;
+}
