@@ -6,14 +6,14 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #1a1a1a; 
+  background-color: #1a1a1a;
   color: #fff;
   overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-  color: #f0f0f0; 
+  color: #f0f0f0;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-bottom: 2px solid #666; 
+  border-bottom: 2px solid #666;
 }
 
 .featured-news-container {
@@ -37,9 +37,9 @@ h1 {
 }
 
 .news-item {
-  width: 38%;
+  width: 100vw;
   padding: 10px;
-  background-color: #333; 
+  background-color: #333;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -47,8 +47,8 @@ h1 {
 }
 
 .featured {
-  width: 80vw;
-  height: 140vh;
+  width: 100%; 
+  height: auto;
 }
 
 .featured img {
@@ -73,7 +73,7 @@ h1 {
 .news-description {
   padding: 1em;
   text-align: justify;
-  color: #ccc; 
+  color: #ccc;
 }
 
 .read-more {
@@ -85,13 +85,13 @@ h1 {
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: #666; 
+  background-color: #666;
   color: #fff;
   border: 2px solid #666;
 }
 
 .read-more:hover {
-  background-color: #333; 
+  background-color: #333;
   color: #fff;
   border: 2px solid #333;
   font-weight: bold;
@@ -112,9 +112,9 @@ h4 {
 }
 
 .news-2 {
-  width: 40vw;
-  height: 60vh;
-  background-color: #333; 
+  width: 100%; 
+  height: auto;
+  background-color: #333;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -125,7 +125,7 @@ h4 {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 8px 0 0 8px;
+  border-radius: 8px 8px 0 0; 
 }
 
 .news-2 h3 {
@@ -137,7 +137,7 @@ h4 {
 }
 
 .news-2 a {
-  margin-left: 430px;
+  margin-left: 0; 
   font-size: 14px;
   text-align: center;
   text-decoration: none;
@@ -150,13 +150,41 @@ h4 {
 .news-2 a:hover {
   color: whitesmoke;
   font-weight: bold;
-
 }
 
 footer {
   text-align: center;
-  color: #333; 
+  color: #333;
   background-color: #f0f0f0;
   padding: 28px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .news-item {
+    width: 48%; 
+  }
+
+  .featured {
+    width: 48%; 
+  }
+
+  .news-2 {
+    width: 48%; 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .news-item {
+    width: 30%; 
+  }
+
+  .featured {
+    width: 60%; 
+  }
+
+  .news-2 {
+    width: 30%; 
+  }
 }
